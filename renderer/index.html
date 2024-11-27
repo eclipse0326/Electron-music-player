@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>本地播放器</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>我的播放器</h1>
+      <div class="d-grid gap-2">
+        <button id="add-music-button" class="btn btn-primary mt-4" type="button">添加歌曲到曲库</button>
+      </div>
+      <div id="tracksList" class="mt-4"></div>
+    </div>
+    <div class="container fixed-bottom bg-white pb-4">
+      <hr/>
+      <div class="row my-2" id="player-status">
+      </div>
+      <div class="progress" role="progressbar">
+        <div class="progress-bar  bg-success" id="player-progress" style="width: 0%">0%</div>
+      </div>
+    </div>
+    <script>
+      require('./index.js')
+    </script>
+  </body>
+</html>
+
