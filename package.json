@@ -24,6 +24,6 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "electron-store": "^8.1.0",
-    "uuid": "^11.0.3"
+    "uuid": "^11.0.5"
   }
 }
